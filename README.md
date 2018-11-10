@@ -1,2 +1,2 @@
-# uaf-rcs-storage-docs
+# README
 UAF-RCS Storage Documentation
