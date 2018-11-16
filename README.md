@@ -1,4 +1,4 @@
 # README
 
-UAF-RCS Storage Documentation
+A repository for UAF RCS user documentation
 
