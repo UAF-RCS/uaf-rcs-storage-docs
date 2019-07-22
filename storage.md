@@ -1,6 +1,6 @@
 # RCS Storage Documentation
 
-#### High Performance Computing Storage
+## High Performance Computing Storage
 
 High Performance Computing storage \($CENTER1\) is fast, high throughput, scratch storage available to Chinook users. $CENTER1 is a Lustre filesystem best used for large files. Reading or writing many small files may result in a noticeable performance reduction. As a scratch workspace, data in $CENTER1 is not backed up. Files that need long-term storage should be copied to a different system or filesystem, such as $ARCHIVE.
 
@@ -8,13 +8,11 @@ Projects are subject to a quota in $CENTER1. Quotas may be checked using the “
 
 Subsidized quota: 1 TB
 
-
-#### Online Spinning Disk
+## Online Spinning Disk
 
 Online spinning disk is used to share data and VM storage. Data may be backed up automatically to $ARCHIVE for an additional service fee or Principal Investigators may back up online spinning disk data manually to their $ARCHIVE account using their subsidized 10 TB or any additional purchased $ARCHIVE storage. Online spinning disk storage will generally perform slower when used with high performance computing.
 
-
-#### Offline Tape Archive
+## Offline Tape Archive
 
 The offline tape archive \($ARCHIVE\) is a long-term storage solution for infrequently accessed data, such as retention of completed work or an archive of data. Data stored in $ARCHIVE is written out to magnetic tape and must be retrieved when copied to another filesystem, resulting in very slow access times. Files in $ARCHIVE should be copied or moved to another filesystem before modifying or using the files.
 
@@ -22,8 +20,7 @@ Principal Investigators in $ARCHIVE are subject to quota. When quota is reached 
 
 Subsidized quota: 10 TB
 
-
-#### Restricted Data Services
+## Restricted Data Services
 
 Launching in Summer 2018
 
