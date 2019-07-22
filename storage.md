@@ -8,13 +8,11 @@ Projects are subject to a quota in $CENTER1. Quotas may be checked using the “
 
 Subsidized quota: 1 TB
 
-[HPC service rates](https://www.gi.alaska.edu/research-computing-systems/service-rates#chinook-shares)
 
 #### Online Spinning Disk
 
 Online spinning disk is used to share data and VM storage. Data may be backed up automatically to $ARCHIVE for an additional service fee or Principal Investigators may back up online spinning disk data manually to their $ARCHIVE account using their subsidized 10 TB or any additional purchased $ARCHIVE storage. Online spinning disk storage will generally perform slower when used with high performance computing.
 
-[Online spinning disk rates](https://www.gi.alaska.edu/research-computing-systems/service-rates#storage)
 
 #### Offline Tape Archive
 
@@ -24,7 +22,6 @@ Principal Investigators in $ARCHIVE are subject to quota. When quota is reached 
 
 Subsidized quota: 10 TB
 
-[$ARCHIVE storage rates](https://www.gi.alaska.edu/research-computing-systems/service-rates#storage)
 
 #### Restricted Data Services
 
