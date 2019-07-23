@@ -40,7 +40,7 @@ bigdipper.alsaka.edu:/archive/PROJECT/$USER/remote-subdir/
 ```
 
 {% hint style="info" %}
-Note the trailing "/" in the path names. This is important. For more information, see the rsync man page.
+Note the trailing "/" in the path names. They are important. For more information, see the [rsync man page](https://linux.die.net/man/1/rsync).
 {% endhint %}
 
 All of these transfers can be automated and executed as a batch job in the chinook transfer queue, or as a cron job on a chinook login node.
