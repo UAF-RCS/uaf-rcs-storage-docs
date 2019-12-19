@@ -4,7 +4,7 @@ description: How to best return data back from tape in the $ARCHIVE file system
 
 # Staging data from tape in $ARCHIVE
 
-$ARCHIVE is a special kind of file system that uses hierarchical storage management (HSM) to allow for higher utilization of storage than the physical spinning disk capacity would normally allow. This is done by copying data to tapes in a magnetic tape library for long term storage, but in so doing, the process erases the file off of the disk capacity. In order to access your file again, it must first be "staged" back from tape, or copied from tape to disk for processes to make use of it. Processes can be anything from scripts, development environments / editors, and data manipulation tools like `rsync` or `cp`.
+$ARCHIVE is a special kind of file system that uses hierarchical storage management (HSM) to allow for higher utilization of storage than the physical spinning disk capacity would normally allow. HSM copies data to tapes in a magnetic tape library for long term storage; this process erases the data off of the disk capacity. In order to access your data again, it must first be "staged" back from tape, i.e. copied from tape to disk for processes to make use of it. Processes can be anything from scripts, development environments / editors, and data manipulation tools like `rsync` or `cp`.
 
 {% hint style="info" %}
 The act of moving a file or directory (mv) within the $ARCHIVE file system is an immediate operation and does not require staging the data back from tape.
