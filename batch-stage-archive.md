@@ -45,7 +45,7 @@ You can see in the output above, a lot of metadata about your file is returned, 
 To bring back one or more files from tape is best done by using the homegrown command `batch_stage`. This command looks at the file(s) requested and orders them to be most efficiently returned from tape. If no files need to be staged back from tape, nothing will happen and the command will return immediately.
 
 {% hint style="info" %}
-Always use batch_stage to return files back from tape to prevent very slow load times from tape!
+Always use **batch_stage** to return files back from tape to prevent very slow load times from tape!
 {% endhint %}
 
 Below are examples of using batch_stage:
