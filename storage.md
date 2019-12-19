@@ -22,9 +22,8 @@ Subsidized quota: 10 TB
 
 ## Restricted Data Services
 
-Launching in Summer 2018
+Launching in Spring 2020
 
 Restricted data services are for data with specific data guidelines such as NIST or ITAR requirements, and cover file sharing and additional online spinning disk and $ARCHIVE storage. The restricted file share is available at no cost to UA faculty, staff, and students, but all data will be purged after 60 days. Restricted $ARCHIVE is subsidized at 2 TB, and additional restricted online spinning disk and $ARCHIVE can be purchased according to RCS service rates.
 
 If you are unsure if a project's data needs require the restricted data service, please contact RCS \([uaf-rcs@alaska.edu](mailto:uaf-rcs@alaska.edu)\).
-
