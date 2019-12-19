@@ -78,13 +78,13 @@ Below are examples of using batch_stage:
      $ ls -1 | batch_stage -i
      ```
 
-5. Stage all files in a directory recursively using relative paths
+5. Stage all files in a directory recursively using relative paths (Option 1)
      ```
      $ cd $ARCHIVE/data
      $ find . -type f | batch_stage -i
      ```
 
-6. Stage all files in a directory recursively using relative paths
+6. Stage all files in a directory recursively using relative paths (Option 2)
      ```
      $ cd $ARCHIVE
      $ batch_stage -r data
