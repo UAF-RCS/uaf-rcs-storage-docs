@@ -41,7 +41,7 @@ The output from that command will look something like this:
 You can see in the output above, a lot of metadata about your file is returned, but the most important section for this document is the line stating "offline". That indicates that the file needs to be "staged" back from tape.
 
 {% hint style="info" %}
-If the text "offline" does not appear in the metadata output, this means that the file is currently on disk ("online").
+If the text **"offline"** does not appear in the metadata output, this means that the file is currently on disk ("online").
 {% endhint %}
 
 ## Batch Stage Files
