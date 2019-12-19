@@ -12,7 +12,7 @@ The act of moving a file or directory (mv) within the $ARCHIVE file system is an
 
 ## Confirm a file is offline in the $ARCHIVE file system
 
-The first thing you should verify before attempting to access your files or directories via any method while on $ARCHIVE is that the file is actively "online", meaning that it resides on hard disk capacity and not "offline" or solely on tape. To verify this, run the following command on your file:
+Before attempting to access your files on $ARCHIVE, verify that the file is actively “online”.  A file is “online” if it resides on hard disk capacity, and it is “offline” if it is solely on tape. To verify the file is currently "offline", run the following command on your file:
 
 ```
 $ sls -D <path_to_file>
