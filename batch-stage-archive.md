@@ -38,7 +38,7 @@ The output from that command will look something like this:
   creation:      Sep  30 2019  residence:    Oct  8  2019
 ```
 
-You can see in the output above, a lot of metadata about your file, but most important for this document is the line stating "offline". That indicates that the file needs to be staged back from tape. If the text "offline" does not appear, it is currently on disk and you do not need to continue on with this document.
+You can see in the output above, a lot of metadata about your file is returned, but the most important section for this document is the line stating "offline". That indicates that the file needs to be staged back from tape. If the text "offline" does not appear, it is currently on disk and you do not need to continue on with this document.
 
 ## Batch Stage Files
 
