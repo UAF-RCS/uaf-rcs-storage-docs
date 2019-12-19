@@ -46,7 +46,7 @@ If the text **"offline"** does not appear in the metadata output, this means tha
 
 ## Batch Stage Files
 
-To bring back one or more files from tape is best done by using the homegrown command `batch_stage`. This command looks at the file(s) requested and orders them to be most efficiently returned from tape. If no files need to be staged back from tape, nothing will happen and the command will return immediately.
+To bring back one or more files from tape use the command `batch_stage`. This command looks at the file(s) requested and orders them to be most efficiently returned from tape. If no files need to be staged back from tape, nothing will happen and the command will return immediately.
 
 {% hint style="info" %}
 Always use **batch_stage** to return files back from tape to prevent very slow load times from tape!
