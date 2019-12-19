@@ -52,7 +52,7 @@ Below are examples of using batch_stage:
 
 1. Stage all files in a directory using absolute paths
      ```
-     $ batch_stage $ARCHIVE/data/*`
+     $ batch_stage $ARCHIVE/data/*
      ```
 
 2. Stage all files in a directory recursively using absolute paths
