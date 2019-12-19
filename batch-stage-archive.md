@@ -27,7 +27,7 @@ $ sls -D test.txt
 The output from that command will look something like this:
 
 ```
-/versity/archive/EXAMPLE/user/test.txt:
+/import/archive/EXAMPLE/user/test.txt:
   mode: -rwxr-s---  links:   1  owner: user  group: example   
   length: 10774625242  inode:   823419671.1
   offline;
