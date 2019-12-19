@@ -12,7 +12,7 @@ The act of moving a file or directory (mv) within the $ARCHIVE file system is an
 
 ## Confirm a file is offline in the $ARCHIVE file system
 
-Before attempting to access your files on $ARCHIVE, verify that the file is actively “online”.  A file is “online” if it resides on hard disk capacity, and it is “offline” if it is solely on tape. To verify the file is currently "offline", run the following command on your file:
+Before attempting to access your files on $ARCHIVE, verify that the file is actively “online”.  A file is “online” if it resides on hard disk capacity, and it is “offline” if it is solely on tape. To check if the file is currently "offline", run the following command on your file:
 
 ```
 $ sls -D <path_to_file>
@@ -38,7 +38,11 @@ The output from that command will look something like this:
   creation:      Sep  30 2019  residence:    Oct  8  2019
 ```
 
-You can see in the output above, a lot of metadata about your file is returned, but the most important section for this document is the line stating "offline". That indicates that the file needs to be staged back from tape. If the text "offline" does not appear, it is currently on disk and you do not need to continue on with this document.
+You can see in the output above, a lot of metadata about your file is returned, but the most important section for this document is the line stating "offline". That indicates that the file needs to be "staged" back from tape.
+
+{% hint style="info" %}
+If the text "offline" does not appear in the metadata output, this means that the file is currently on disk ("online").
+{% endhint %}
 
 ## Batch Stage Files
 
