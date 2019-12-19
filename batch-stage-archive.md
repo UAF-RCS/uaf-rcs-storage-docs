@@ -86,5 +86,6 @@ Below are examples of using batch_stage:
 
 6. Stage all files in a directory recursively using relative paths
      ```
+     $ cd $ARCHIVE
      $ batch_stage -r data
      ```
