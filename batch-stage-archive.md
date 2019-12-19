@@ -10,7 +10,7 @@ $ARCHIVE is a special kind of file system that uses hierarchical storage managem
 The act of moving a file or directory (mv) within the $ARCHIVE file system is an immediate operation and does not require staging the data back from tape.
 {% endhint %}
 
-## Confirm a file is offline in file system
+## Confirm a file is offline in the $ARCHIVE file system
 
 The first thing you should verify before attempting to access your files or directories via any method while on $ARCHIVE is that the file is actively "online", meaning that it resides on hard disk capacity and not "offline" or solely on tape. To verify this, run the following command on your file:
 
