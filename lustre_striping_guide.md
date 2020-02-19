@@ -10,11 +10,11 @@ $CENTER1 is a high performance parallel file system built using the Lustre 2.x s
 
 Any file in a file system is simply a linear sequence of bytes. Below is a logical view of a file, divided into segments, which by default are 1 MB in size:
 
-![example file](example_file.png)
+![Logical Layout of Example File](example_file.png)
 
 In Lustre, we are able to split that file across multiple storage targets to increase performance for larger files or multiple processes reading / writing to different sections of the same file. An example of that would be to request that we use three OSTs to split up the example file which would be separated out like this:
 
-![lustre_striping](lustre_striping.png)
+![OST Striping of Example File](lustre_striping.png)
 
 Striping offers two benefits: 1) an increase in bandwidth because multiple processes can simultaneously access the same file, and 2) the ability to store large files that would take more space than a single OST. However, striping is not without disadvantages: 1) increased overhead due to network operations and server contention, and 2) increased risk of file damage due to hardware malfunction. Users have the option of configuring the size and number of stripes used for any file.
 
