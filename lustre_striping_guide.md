@@ -6,7 +6,7 @@ Description: How to stripe data across $CENTER1 Lustre OSTs for better performan
 
 $CENTER1 is a high performance parallel file system built using the Lustre 2.x software, which allows for multiple individual object storage targets (OSTs) to be combined into a single namespace. One of the main factors leading to the high performance of Lustre file systems is the ability to stripe data across these multiple OSTs in a round-robin fashion. Basically files can be split up into multiple chunks that will then be stored on different OSTs across the Lustre system resulting in parallel access and writes to files contained within a directory.
 
-## Logical File View and Striping in Lustre
+# Logical File View and Striping in Lustre
 
 Any file in a file system is simply a linear sequence of bytes. Below is a logical view of a file, divided into segments, which by default are 1 MB in size:
 
@@ -18,7 +18,7 @@ In Lustre, we are able to split that file across multiple storage targets to inc
 
 Striping offers two benefits: 1) an increase in bandwidth because multiple processes can simultaneously access the same file, and 2) the ability to store large files that would take more space than a single OST. However, striping is not without disadvantages: 1) increased overhead due to network operations and server contention, and 2) increased risk of file damage due to hardware malfunction. Users have the option of configuring the size and number of stripes used for any file.
 
-## Default Stripe Settings
+# Default Stripe Settings
 
 The default stripe setting for files in $CENTER1 is set to 1 OST and 1 MB stripe sizes. This is ideal for work flows that create and read a bunch of small files, as striping for small files actually reduces performance and can be a detriment to your workflow. To see the default stripe settings for a file or directory in $CENTER1, use the **lfs getstripe** command as shown below:
 
@@ -52,13 +52,13 @@ lmm_stripe_offset: 1
 
 The obdidx numbers listed are the indices of the OSTs used in the striping of this file. Using getstripe on a directory gives information for the directory plus the files contained in the directory. You can limit **getstripe** to only show directory information by using the **-d** option. Alternately, you can use the **-r** option to recursively follow all subdirectories.
 
-## General Considerations
+# General Considerations
 
 Large files benefit from higher stripe counts. By striping a large file over many OSTs, you increase bandwidth for accessing the file and can benefit from having many processes operating on a single file concurrently. Conversely, a very large file that is only striped across one or two OSTs can degrade the performance of the entire Lustre system by filling up OSTs unnecessarily. A good practice is to have dedicated directories with high stripe counts for writing very large files into. This will improve your and everyone else's performance on the file system.
 
 Another scenario to avoid is having small files with large stripe counts. This can be detrimental to performance due to the unnecessary communication overhead to multiple OSTs. A good practice is to make sure small files are written to a directory with a stripe count of 1—effectively, no striping.
 
-## Setting your Striping Configurations
+# Setting your Striping Configurations
 
 The **lfs setstripe** command is used to dictate a particular striping configuration for a file or directory. For a file, **lfs setstripe**:
 * gives an error if the file already exists (see **Note** below)
