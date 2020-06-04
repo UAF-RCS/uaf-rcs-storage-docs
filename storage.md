@@ -10,7 +10,7 @@ Subsidized quota: 1 TB
 
 ## Online Spinning Disk
 
-Online spinning disk is used to share data and VM storage. Data may be backed up automatically to $ARCHIVE for an additional service fee or Principal Investigators may back up online spinning disk data manually to their $ARCHIVE account using their subsidized 10 TB or any additional purchased $ARCHIVE storage. Online spinning disk storage will generally perform slower when used with high performance computing.
+Online spinning disk is used to share data and storage to RCS managed VMs. Data may be backed up automatically to $ARCHIVE for an additional service fee or Principal Investigators may back up online spinning disk data manually to their $ARCHIVE account using their subsidized 10 TB or any additional purchased $ARCHIVE storage. Online spinning disk storage will generally perform slower when used with high performance computing.
 
 ## Offline Tape Archive
 
