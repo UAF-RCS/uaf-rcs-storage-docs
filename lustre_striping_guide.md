@@ -76,7 +76,7 @@ Using **lfs setstripe** on a directory:
 
 The options for **lfs setstripe** are:
 
-* **-c** o set the stripe count; 0 means use the system default (usually 1) and -1 means stripe over all available OSTs. Any number between 2 - 15 will result in striping across multiple OSTs. Maximum is the number of OSTs we have: **15 OSTs**
+* **-c** to set the stripe count; 0 means use the system default (usually 1) and -1 means stripe over all available OSTs. Any number between 2 - 15 will result in striping across multiple OSTs. Maximum is the number of OSTs we have: **15 OSTs**
 * **-S** to set the stripe size; 0 means use the system default (usually 1 MB) otherwise use **k**, **m** or **g** for KB, MB or GB respectively.
 
 For example, to configure an existing directory *bigdir* for holding very large files, we could set its stripe count to 10 and stripe size to 32 MB with:
